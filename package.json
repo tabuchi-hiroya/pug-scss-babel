@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "browser-sync start --config bs-config.js",
+    "watch:pug": "pug src -w -o dist",
     "watch:css": "node-sass src/css/style.scss dist/css/style.css -w --source-map true --output-style compressed",
     "watch:webpack": "webpack -w",
     "start": "run-p server watch:*"
@@ -19,6 +20,8 @@
     "node-sass": "^4.4.0",
     "npm-run-all": "^4.0.1",
     "path": "^0.12.7",
+    "pug": "^0.1.0",
+    "pug-cli": "0.0.0",
     "webpack": "^1.14.0"
   }
 }

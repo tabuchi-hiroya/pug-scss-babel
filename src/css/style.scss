@@ -3,8 +3,9 @@
 @import "base/normalize";
 
 .test {
-  color: #333;
+  color: #f00;
   .test-child {
     font-weight: bold;
+    margin: 0;
   }
 }
