@@ -2,8 +2,18 @@
 
 @import "base/normalize";
 
+/*
+#styleguide
+テストコメント
+
+@todo
+
+ */
 .test {
-  color: #f00;
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  color: #f33;
   .test-child {
     font-weight: bold;
     margin: 0;
