@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "node frontnote.js",
-    "server": "browser-sync start --config bs-config.js",
+    "browser": "browser-sync start --config bs-config.js",
     "scss-css": "node-sass src/css/style.scss dist/css/style.css -w --source-map true",
     "post-css": "postcss --use autoprefixer dist/css/style.css -d dist/css/ -w",
     "build:styleguide": "node frontnote.js",
     "watch:pug": "pug src -w -o dist",
     "watch:css": "run-p scss-css post-css",
     "watch:webpack": "webpack -w",
-    "start": "run-p server watch:*"
+    "start": "run-p browser watch:*"
   },
   "author": "",
   "license": "ISC",
